@@ -42,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
 
         Request request = new Request.Builder()
                 .url("https://www.baidu.com/")
+//                .addHeader("cache","false")
                 .get()
                 .build();
         okHttpClient.newCall(request).enqueue(new Callback() {
